@@ -30,3 +30,23 @@ let calculate_grade = function(percentage){
 
 let result = print_grade (10,20)
 console.log(result)
+
+//creating obj & reading & editing using a function
+let person = {
+    name: 'Rohit',
+    age: 36,
+    location: 'Mumbai'
+}
+
+let readobj = function(obj){
+    console.log(`${obj.name} is ${obj.age} and lives in ${obj.location}`)
+
+}
+readobj(person)
+
+let editobj = function(obj){
+    person.age += 1
+
+}
+editobj(person)
+readobj(person)
