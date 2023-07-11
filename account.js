@@ -1,6 +1,6 @@
 //creating a tracker program to track the details of an account
 //an account object will be interacted using different functions 
-let myaccount = {
+let myAccount = {
     name: 'Bhavik',
     income: 0,
     expense: 0
@@ -21,18 +21,18 @@ let resetAccount = function(account){
     account.expense =0
 }
 
-let getsummary = function(account){
+let getSummary = function(account){
     let name = account.name
-    let total_income = account.income
-    let total_expense = account.expense
-    let current_balance = total_income - total_expense
+    let totalIncome = account.income
+    let totalExpense = account.expense
+    let currentBalance = totalIncome - totalExpense
 
-    console.log(`this is account of ${name}. Current balance = ${current_balance}. Total income = ${total_income}. Total expence = ${total_expense} `)
+    console.log(`this is account of ${name}. Current balance = ${currentBalance}. Total income = ${totalIncome}. Total expence = ${totalExpense} `)
 }
 
-getsummary(myaccount)
-addIncome(myaccount,1000)
-addExpense(myaccount,200)
-getsummary(myaccount)
-resetAccount(myaccount)
-getsummary(myaccount)
+getSummary(myAccount)
+addIncome(myAccount,1000)
+addExpense(myAccount,200)
+getSummary(myAccount)
+resetAccount(myAccount)
+getSummary(myAccount)
