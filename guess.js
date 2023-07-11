@@ -2,7 +2,7 @@
 //if our guess is true it shows won else false  
 
 
-let guessgame = function(num){
+let guessGame = function(num){
     let min =1
     let max =5
 
@@ -15,8 +15,8 @@ let guessgame = function(num){
     }
 }
 
-guessgame(2)
-guessgame(3)
-guessgame(1)
-guessgame(5)
-guessgame(5)
+guessGame(2)
+guessGame(3)
+guessGame(1)
+guessGame(5)
+guessGame(5)
