@@ -64,6 +64,6 @@ let rect = function (l,b){
     }
 }
 
-let rectobj = rect(x,y)
-console.log(rectobj)
-console.log(rectobj.length)
+let rectObj = rect(x,y)
+console.log(rectObj)
+console.log(rectObj.length)
