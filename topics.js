@@ -1,24 +1,24 @@
 //created a grade calculator to show the use of following topics:-
 //Functions(arguments), template strings, mathemetical & logical operator & scope of var
 
-let print_grade = function(student_score, total_marks){
+let printGrade = function(student_score, total_marks){
     percentage = (student_score / total_marks)*100
-    let grade = calculate_grade(percentage)
+    let grade = calculateGrade(percentage)
     return `You have got Grade ${grade} & ${percentage}%`
 }
 
-let calculate_grade = function(percentage){
+let calculateGrade = function(percentage){
     let grade
-    if(percentage >= 90){
+    if(percentage >= 90 && percentage < 100 ){
         grade= 'A'
     }
-    else if(percentage >= 80){
+    else if(percentage >= 80 && percentage < 90){
         grade='B'
     }
-    else if(percentage >= 70){
+    else if(percentage >= 70 && percentage < 80){
         grade='C'
     }
-    else if(percentage >= 60){
+    else if(percentage >= 60 && percentage < 70){
         grade='D'
     }
     else{
@@ -28,5 +28,6 @@ let calculate_grade = function(percentage){
     return grade
 }
 
-let result = print_grade (10,20)
+let result = printGrade (10,20)
 console.log(result)
+
